@@ -28,9 +28,7 @@ All the code is ready, we just need to execute the train.py script with the --mo
 
 By the end of 20 epochs, we have a training accuracy of 98% and a validation accuracy of 73.24%. But looking at the graphs will give us more insights.
 
-<img src="https://api.wandb.ai/files/serfati/YOLOv5/pdi8u78e/media/images/Validation_5190_1.jpg" width="520"/> 
-
-[Accuracy](https://github.com/hubert10/ResNet18_from_Scratch_using_PyTorch/blob/main/outputs/resnet_scratch_accuracy.png)
+<img src="https://github.com/hubert10/ResNet18_from_Scratch_using_PyTorch/blob/main/outputs/resnet_scratch_accuracy.png"/> 
 
 <img src="https://github.com/hubert10/ResNet18_from_Scratch_using_PyTorch/blob/main/outputs/resnet_scratch_loss.png"/> 
 
@@ -45,9 +43,11 @@ Now, let’s train the Torchvision ResNet18 model without using any pretrained w
 
 We can see a similar type of fluctuations in the validation curves here as well.
 
-[Accuracy](https://github.com/hubert10/ResNet18_from_Scratch_using_PyTorch/blob/main/outputs/resnet_torchvision_accuracy.png)
 
-[Loss](https://github.com/hubert10/ResNet18_from_Scratch_using_PyTorch/blob/main/outputs/resnet_torchvision_loss.png)
+<img src="https://github.com/hubert10/ResNet18_from_Scratch_using_PyTorch/blob/main/outputs/resnet_torchvision_accuracy.png"/> 
+
+
+<img src="https://github.com/hubert10/ResNet18_from_Scratch_using_PyTorch/blob/main/outputs/resnet_torchvision_loss.png"/> 
 
 Most of these issues can be solved by using image augmentation and a learning rate scheduler.
 
