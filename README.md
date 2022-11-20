@@ -28,6 +28,11 @@ All the code is ready, we just need to execute the train.py script with the --mo
 
 By the end of 20 epochs, we have a training accuracy of 98% and a validation accuracy of 73.24%. But looking at the graphs will give us more insights.
 
+[Accuracy](https://github.com/hubert10/ResNet18_from_Scratch_using_PyTorch/blob/main/outputs/resnet_scratch_accuracy.png)
+
+[Loss](https://github.com/hubert10/ResNet18_from_Scratch_using_PyTorch/blob/main/outputs/resnet_scratch_loss.png)
+
+
 Although the training looks pretty good, we can see a lot of fluctuations in the validation accuracy and loss curves. The CIFAR10 dataset is not the easiest of the datasets. Moreover, we are training from scratch without any pretrained weights. But we will get to actually know whether our ResNet18 model is performing as it should only after training the Torchvision ResNet18 model.
 
 ### Torchvision ResNet18 Training
@@ -37,6 +42,10 @@ Now, let’s train the Torchvision ResNet18 model without using any pretrained w
 **python train.py --model torchvision**
 
 We can see a similar type of fluctuations in the validation curves here as well.
+
+[Accuracy](https://github.com/hubert10/ResNet18_from_Scratch_using_PyTorch/blob/main/outputs/resnet_torchvision_accuracy.png)
+
+[Loss](https://github.com/hubert10/ResNet18_from_Scratch_using_PyTorch/blob/main/outputs/resnet_torchvision_loss.png)
 
 Most of these issues can be solved by using image augmentation and a learning rate scheduler.
 
